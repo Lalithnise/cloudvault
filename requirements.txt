@@ -1,9 +1,8 @@
 Flask
 Flask-Session
+Flask-Mail
+python-dotenv
 cloudinary
 sqlite3-binary
-python-dotenv
-fuzzywuzzy
-python-Levenshtein
-openai
 requests
+gunicorn
