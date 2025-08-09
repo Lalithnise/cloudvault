@@ -3,6 +3,5 @@ Flask-Session
 Flask-Mail
 python-dotenv
 cloudinary
-sqlite3-binary
 requests
 gunicorn
