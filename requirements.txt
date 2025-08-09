@@ -1,0 +1,9 @@
+Flask
+Flask-Session
+cloudinary
+sqlite3-binary
+python-dotenv
+fuzzywuzzy
+python-Levenshtein
+openai
+requests
