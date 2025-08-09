@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - CloudVault</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/main.js"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <h2>Welcome to CloudVault</h2>
+        <form method="GET" action="/search">
+            <input type="text" name="q" placeholder="Search files...">
+        </form>
+        <a href="/upload">Upload</a>
+        <a href="/access">Access Folder</a>
+        <a href="/logout">Logout</a>
+    </div>
+    <div class="dashboard">
+        <h3>Your Files</h3>
+        {% for file in files %}
+            <div class="file-card">
+                <p><strong>{{ file[1] }}</strong></p>
+                <a href="/view/{{ file[0] }}">View</a> |
+                <a href="/download/{{ file[0] }}">Download</a> |
+                <a href="/generate_link/{{ file[0] }}">Generate Expiring Link</a>
+            </div>
+        {% else %}
+            <p>No files found.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

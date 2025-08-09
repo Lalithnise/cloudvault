@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File - CloudVault</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload a File</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required><br>
+            <input type="text" name="folder_name" placeholder="Folder Name" required><br>
+            <input type="password" name="folder_password" placeholder="Folder Password" required><br>
+            <button type="submit">Upload</button>
+        </form>
+        <a href="/dashboard">Back to Dashboard</a>
+    </div>
+</body>
+</html>

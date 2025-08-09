@@ -1,0 +1,37 @@
+body {
+    background-color: #0d0d0d;
+    color: #e0e0ff;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: radial-gradient(#3f0071, #000000);
+    animation: backgroundShift 20s infinite linear;
+    margin: 0;
+    padding: 0;
+}
+@keyframes backgroundShift {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+input, button {
+    margin: 8px 0;
+    padding: 10px;
+    background: #1f0035;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+button:hover {
+    background: #4f00ff;
+}
+a {
+    color: #7fffda;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.file-card, .upload-container, .access-container, .file-view-container, .login-container, .signup-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+}
